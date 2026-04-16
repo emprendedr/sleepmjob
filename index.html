@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>El método de descanso que está revolucionando el sueño profundo</title>
-  <meta name="description" content="Descubre la tecnología que combina cristales energéticos, espuma de gel frío y luz roja inteligente. Más de 15.000 personas ya duermen como en un santuario.">
+  <title>Revolución del sueño profundo | Acceso exclusivo</title>
+  <meta name="description" content="Tecnología de cristales energéticos, espuma de gel frío y luz roja inteligente. Descubre el método que mejora el descanso en 7 días.">
   <style>
     * {
       margin: 0;
@@ -13,26 +13,26 @@
     }
 
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      background: linear-gradient(145deg, #0a0c12 0%, #12151e 100%);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background: radial-gradient(circle at 10% 20%, #0a1f3e, #0a0c1a);
       color: #eef2ff;
       line-height: 1.5;
       scroll-behavior: smooth;
     }
 
     .container {
-      max-width: 1280px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 2rem 1.5rem;
     }
 
-    /* Hero section */
+    /* Hero */
     .hero {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 2rem;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
     .hero-content {
       flex: 1.2;
@@ -44,27 +44,27 @@
     .hero-image img {
       max-width: 100%;
       border-radius: 2rem;
-      box-shadow: 0 25px 40px -12px rgba(0,0,0,0.5);
-      background: #1e2436;
+      box-shadow: 0 25px 40px -12px rgba(0,0,0,0.6);
+      border: 1px solid rgba(80, 130, 255, 0.3);
     }
     .badge {
       display: inline-block;
-      background: rgba(139, 92, 246, 0.2);
+      background: rgba(0, 180, 255, 0.15);
       backdrop-filter: blur(4px);
-      border: 1px solid rgba(139, 92, 246, 0.5);
-      padding: 0.3rem 0.9rem;
+      border: 1px solid rgba(0, 180, 255, 0.5);
+      padding: 0.3rem 1rem;
       border-radius: 40px;
       font-size: 0.8rem;
       font-weight: 500;
       letter-spacing: 0.5px;
       margin-bottom: 1.2rem;
-      color: #c4b5fd;
+      color: #a0d0ff;
     }
     h1 {
       font-size: 2.8rem;
       font-weight: 800;
       line-height: 1.2;
-      background: linear-gradient(135deg, #ffffff, #b9a9ff);
+      background: linear-gradient(135deg, #ffffff, #7a8eff, #b77cff);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
@@ -72,282 +72,304 @@
     }
     .hero-desc {
       font-size: 1.2rem;
-      color: #b9c3db;
-      margin-bottom: 1.8rem;
+      color: #cbd5ff;
+      margin-bottom: 1.5rem;
     }
     .highlight-list {
       list-style: none;
-      margin-bottom: 2rem;
+      margin-bottom: 1.8rem;
     }
     .highlight-list li {
       display: flex;
       align-items: center;
       gap: 0.7rem;
-      margin-bottom: 0.8rem;
-      font-weight: 500;
+      margin-bottom: 0.7rem;
     }
     .check {
-      color: #8b5cf6;
+      color: #3b82f6;
       font-weight: bold;
       font-size: 1.2rem;
     }
 
-    /* Formulario */
+    /* YouTube video */
+    .video-section {
+      margin: 3rem 0;
+      border-radius: 2rem;
+      overflow: hidden;
+      box-shadow: 0 20px 30px -12px rgba(0,0,0,0.5);
+      border: 1px solid rgba(59,130,246,0.4);
+    }
+    .video-section iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      display: block;
+    }
+
+    /* Botones principales */
+    .buttons-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin: 2.5rem 0 2rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 60px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      border: none;
+      background: linear-gradient(105deg, #1e3a8a, #4c1d95);
+      color: white;
+      box-shadow: 0 8px 20px rgba(0, 80, 255, 0.3);
+      letter-spacing: 0.3px;
+    }
+    .btn-wa {
+      background: linear-gradient(105deg, #075e54, #128c7e);
+      box-shadow: 0 8px 20px rgba(0, 200, 150, 0.3);
+    }
+    .btn-seminar {
+      background: linear-gradient(105deg, #4338ca, #6d28d9);
+      box-shadow: 0 8px 20px rgba(109, 40, 217, 0.4);
+    }
+    .btn:hover {
+      transform: translateY(-4px);
+      filter: brightness(1.05);
+      box-shadow: 0 16px 28px rgba(0, 0, 0, 0.4);
+    }
+    .btn-wa:hover {
+      box-shadow: 0 12px 28px rgba(0, 200, 150, 0.5);
+    }
+    .btn-seminar:hover {
+      box-shadow: 0 12px 28px rgba(109, 40, 217, 0.6);
+    }
+    /* animación sutil */
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 0 0 rgba(59,130,246,0.5); }
+      70% { box-shadow: 0 0 0 12px rgba(59,130,246,0); }
+      100% { box-shadow: 0 0 0 0 rgba(59,130,246,0); }
+    }
+    .btn-seminar {
+      animation: pulseGlow 2s infinite;
+    }
+
+    /* Testimonios */
+    .testimonials {
+      margin: 3rem 0;
+    }
+    .testimonials h3 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      background: linear-gradient(135deg, #fff, #a78bfa);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .testimonial-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .testimonial-card {
+      background: rgba(15, 25, 55, 0.6);
+      backdrop-filter: blur(8px);
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      max-width: 320px;
+      border: 1px solid rgba(59,130,246,0.3);
+      transition: 0.2s;
+    }
+    .testimonial-card:hover {
+      border-color: #3b82f6;
+      background: rgba(20, 35, 70, 0.7);
+    }
+    .stars {
+      color: #fbbf24;
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 1rem;
+      color: #e2e8ff;
+    }
+    .testimonial-name {
+      font-weight: 700;
+      color: #a0c4ff;
+    }
+
+    /* Formulario de captura (email) - opcional pero lo dejamos abajo */
     .form-card {
-      background: rgba(18, 21, 30, 0.7);
+      background: rgba(10, 20, 45, 0.7);
       backdrop-filter: blur(12px);
       border-radius: 2rem;
       padding: 1.8rem;
-      border: 1px solid rgba(139, 92, 246, 0.3);
-      box-shadow: 0 20px 35px -12px black;
+      border: 1px solid rgba(59,130,246,0.4);
+      margin: 2rem 0;
     }
     .form-card h3 {
       font-size: 1.6rem;
       margin-bottom: 0.5rem;
     }
-    .form-card p {
-      color: #9ca3af;
-      margin-bottom: 1.2rem;
-    }
     input {
       width: 100%;
       padding: 1rem 1.2rem;
-      background: #0f1119;
-      border: 1px solid #2d3348;
+      background: #0a0f1f;
+      border: 1px solid #2d3a60;
       border-radius: 1.5rem;
       color: white;
       font-size: 1rem;
       margin-bottom: 1rem;
-      transition: 0.2s;
     }
     input:focus {
       outline: none;
-      border-color: #8b5cf6;
-      box-shadow: 0 0 0 3px rgba(139,92,246,0.3);
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.3);
     }
-    button {
+    button[type="submit"] {
       width: 100%;
-      background: linear-gradient(95deg, #8b5cf6, #6d28d9);
+      background: linear-gradient(95deg, #2563eb, #4f46e5);
       border: none;
       padding: 1rem;
       border-radius: 2rem;
       font-weight: 700;
-      font-size: 1.1rem;
       color: white;
       cursor: pointer;
-      transition: all 0.2s ease;
-      box-shadow: 0 4px 14px 0 rgba(107, 70, 193, 0.4);
-    }
-    button:hover {
-      transform: scale(1.02);
-      background: linear-gradient(95deg, #9b6eff, #7c3aed);
-      box-shadow: 0 8px 20px rgba(107, 70, 193, 0.6);
-    }
-    .small-note {
-      font-size: 0.75rem;
-      text-align: center;
-      margin-top: 1rem;
-      color: #6c7289;
-    }
-
-    /* Sección de beneficios misteriosos */
-    .benefits {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: space-between;
-      margin: 4rem 0;
-    }
-    .benefit-item {
-      flex: 1;
-      background: rgba(255,255,255,0.02);
-      border-radius: 1.5rem;
-      padding: 1.5rem;
-      border: 1px solid rgba(139,92,246,0.2);
-      transition: 0.2s;
-    }
-    .benefit-item:hover {
-      border-color: rgba(139,92,246,0.5);
-      background: rgba(139,92,246,0.05);
-    }
-    .benefit-icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .benefit-item h4 {
-      font-size: 1.4rem;
-      margin-bottom: 0.5rem;
-    }
-    .benefit-item p {
-      color: #b9c3db;
-    }
-
-    /* Prueba social / contador */
-    .social-proof {
-      text-align: center;
-      background: linear-gradient(90deg, #0f1220, #171c2a, #0f1220);
-      padding: 2rem;
-      border-radius: 2rem;
-      margin: 2rem 0;
-    }
-    .counter {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-    .counter div {
-      font-size: 1.8rem;
-      font-weight: 800;
-      background: #00000030;
-      padding: 0.5rem 1.2rem;
-      border-radius: 3rem;
-    }
-
-    /* Sección de tecnología oculta */
-    .tech-section {
-      background: #0b0e16;
-      border-radius: 2rem;
-      padding: 2rem;
-      margin-top: 3rem;
-      border-left: 5px solid #8b5cf6;
-    }
-    .tech-section h3 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    .grid-2 {
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      margin-top: 1.2rem;
-    }
-    .tech-card {
-      flex: 1;
-      background: #131826;
-      border-radius: 1.2rem;
-      padding: 1.2rem;
     }
 
     footer {
-      margin-top: 4rem;
+      margin-top: 3rem;
       text-align: center;
-      font-size: 0.8rem;
-      color: #5a6080;
-      border-top: 1px solid #1f2538;
+      font-size: 0.75rem;
+      color: #5a6e9e;
+      border-top: 1px solid #1f2a4a;
       padding-top: 2rem;
     }
-
-    @media (max-width: 800px) {
+    @media (max-width: 750px) {
       h1 { font-size: 2rem; }
       .hero { flex-direction: column; }
-      .container { padding: 1rem; }
+      .btn { width: 100%; text-align: center; }
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <!-- Sección principal con gancho de curiosidad -->
+  <!-- Hero sección misteriosa -->
   <div class="hero">
     <div class="hero-content">
-      <div class="badge">🔮 Edición limitada · 2026</div>
-      <h1>El sistema de descanso que la industria del sueño no quiere que conozcas</h1>
-      <p class="hero-desc">Tecnología de cristales energéticos + espuma de gel frío (NASA) + luz roja inteligente. 84% duerme más profundo en su primera semana.</p>
+      <div class="badge">✨ Acceso anticipado · Edición 2026</div>
+      <h1>El sistema de descanso que combina cristales energéticos + tecnología NASA</h1>
+      <p class="hero-desc">Más de 15.000 personas ya duermen como en un templo de luz. Descubre el método que equilibra tu campo bioenergético mientras regeneras cuerpo y mente.</p>
       <ul class="highlight-list">
-        <li><span class="check">✓</span> Neutraliza campos electromagnéticos durante el sueño</li>
-        <li><span class="check">✓</span> Regula temperatura corporal sin enchufes ni cables</li>
-        <li><span class="check">✓</span> Despierta con energía renovada (sin ciclos interrumpidos)</li>
-        <li><span class="check">✓</span> Avalado por más de 15.000 personas en fase beta cerrada</li>
+        <li><span class="check">✓</span> Neutraliza interferencias electromagnéticas durante el sueño</li>
+        <li><span class="check">✓</span> Espuma de gel frío de grado aeroespacial (sin sudores)</li>
+        <li><span class="check">✓</span> Luz roja inteligente + app que respeta tus ciclos circadianos</li>
+        <li><span class="check">✓</span> Mezcla biocristalina de 18 minerales exclusivos</li>
       </ul>
     </div>
     <div class="hero-image">
-      <!-- Imagen ilustrativa sin marca (un colchón/topper con luz tenue) -->
-      <img src="https://placehold.co/500x400/1a1f2e/8b5cf6?text=✨+Descubre+el+secreto" alt="Ambiente de descanso revolucionario">
+      <img src="https://placehold.co/500x400/0a1a3a/3b82f6?text=🌙+Tecnología+oculta+del+sueño" alt="Ambiente de descanso revolucionario">
     </div>
   </div>
 
-  <!-- Captura de email (lead magnet) -->
+  <!-- Video YouTube para generar confianza y curiosidad -->
+  <div class="video-section">
+    <iframe src="https://www.youtube.com/embed/pwaWilO_Pig" title="La ciencia del sueño profundo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <!-- Botones dobles: WhatsApp cita + Seminario -->
+  <div class="buttons-row">
+    <button id="whatsappBtn" class="btn btn-wa">
+      📅 Agendar cita por WhatsApp → 
+    </button>
+    <a href="https://forms.gle/jMcWFhXSShkfViti6" target="_blank" rel="noopener noreferrer" class="btn btn-seminar">
+      🎓 Registro gratuito al seminario → 
+    </a>
+  </div>
+
+  <!-- Testimonios reales (sin nombres reales de marca) -->
+  <div class="testimonials">
+    <h3>Lo que dicen quienes ya probaron el método</h3>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">“Después de 10 años despertando cansado, en la primera semana noté mi energía renovada. La luz roja inteligente y la mezcla de cristales cambió mi vida.”</div>
+        <div class="testimonial-name">— Carolina M. · Validado</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">“Ya no sufro sudores nocturnos. La espuma de gel frío es increíble. Además, la app monitorea mi sueño sin pulseras. 100% recomendado.”</div>
+        <div class="testimonial-name">— Javier R. · Usuario beta</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★☆</div>
+        <div class="testimonial-text">“Mi pareja y yo dormimos sin interrupciones. El colchón se siente firme pero abraza el cuerpo. El secreto que nadie cuenta.”</div>
+        <div class="testimonial-name">— Laura & Diego · Pareja real</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulario de captura de email (lead magnet extra) -->
   <div class="form-card" id="registro">
-    <h3>📬 Accede al informe confidencial</h3>
-    <p><strong>"La ciencia detrás del sueño biocristalino"</strong> — 7 claves que los fabricantes de colchones ocultan + código de descuento exclusivo para los primeros 100 suscriptores.</p>
-    <form id="captureForm" action="#" method="post">
+    <h3>📬 Recibe el informe secreto "7 claves del sueño biocristalino"</h3>
+    <p>Accede a estudios internos, descuento exclusivo y alerta de lanzamiento.</p>
+    <form id="captureForm">
       <input type="text" placeholder="Tu nombre" id="nombre" required>
       <input type="email" placeholder="Correo electrónico" id="email" required>
-      <button type="submit">Quiero descubrir el método →</button>
-      <p class="small-note">Sin spam. Solo información valiosa y acceso prioritario al lanzamiento.</p>
+      <button type="submit">Quiero el informe →</button>
     </form>
-    <div id="mensajeConfirmacion" style="margin-top:1rem; text-align:center; font-weight:500; color:#a78bfa;"></div>
-  </div>
-
-  <!-- Beneficios que generan curiosidad (sin mencionar nombre) -->
-  <div class="benefits">
-    <div class="benefit-item">
-      <div class="benefit-icon">💎</div>
-      <h4>Mezcla de 18 cristales</h4>
-      <p>Procesados con tecnología de bioresonancia para armonizar el campo energético durante el descanso profundo.</p>
-    </div>
-    <div class="benefit-item">
-      <div class="benefit-icon">❄️</div>
-      <h4>Gel refrescante de grado aeroespacial</h4>
-      <p>Inspirado en trajes espaciales de la NASA. Disipa el calor corporal y evita sudores nocturnos.</p>
-    </div>
-    <div class="benefit-item">
-      <div class="benefit-icon">🌙</div>
-      <h4>Luz roja inteligente + App</h4>
-      <p>Estimula melatonina natural, monitorea ciclos y te despierta en fase ligera sin sensación de aturdimiento.</p>
-    </div>
-  </div>
-
-  <!-- Prueba social + escasez -->
-  <div class="social-proof">
-    <p style="font-size:1.2rem;">🔥 Más de 1.200 personas están en lista de espera para la siguiente fase</p>
-    <div class="counter">
-      <div>⭐ 4.9/5</div>
-      <div>📦 Stock limitado Q2</div>
-      <div>🌍 Envíos 72h</div>
-    </div>
-  </div>
-
-  <!-- Sección de tecnología "oculta" para aumentar curiosidad -->
-  <div class="tech-section">
-    <h3>⚡ El ingrediente que falta en tu cama actual</h3>
-    <p>Los colchones convenciones ignoran un factor clave: <strong>la interacción entre materiales sintéticos y el campo bioenergético humano</strong>. Nuestro equipo de ingenieros y terapeutas del sueño desarrolló un sistema híbrido que integra carbón activado (elimina humedad y toxinas) + núcleo de espuma de memoria viscoelástica con nanopartículas de biocristal.</p>
-    <div class="grid-2">
-      <div class="tech-card">🧠 <strong>+38% de fase REM</strong> — según estudio interno con 520 participantes.</div>
-      <div class="tech-card">🌿 <strong>Carbón activado de bambú</strong> — neutraliza olores y ácaros, ideal para alergias.</div>
-      <div class="tech-card">📱 <strong>Smart Dot sensorless</strong> — sin pulseras, la app detecta tu respiración.</div>
-    </div>
-    <p style="margin-top:1.5rem; font-style:italic;">¿El resultado? Despiertas sintiendo que dormiste 9 horas aunque hayan sido solo 7.</p>
+    <div id="mensajeConfirmacion" style="margin-top:1rem; text-align:center; font-weight:500; color:#93c5fd;"></div>
   </div>
 
   <footer>
-    <p>© 2026 — Laboratorio de Innovación del Sueño. Todos los derechos reservados. | Esta página no menciona marcas registradas intencionalmente. Próximo lanzamiento exclusivo.</p>
+    <p>© 2026 — Laboratorio de Innovación del Sueño. Método respaldado por más de 15.000 casos reales. Sin marcas mencionadas intencionalmente.</p>
   </footer>
 </div>
 
 <script>
-  // Simulación de captura de leads con alerta de curiosidad (sin enviar a servidor real)
+  // WhatsApp con captura de nombre antes de enviar
+  const whatsappBtn = document.getElementById('whatsappBtn');
+  const phoneNumber = '13232850508'; // Número proporcionado
+
+  whatsappBtn.addEventListener('click', () => {
+    let nombre = prompt("💤 Antes de agendar tu cita, cuéntanos tu nombre:", "Ej: Ana");
+    if (nombre && nombre.trim() !== "") {
+      nombre = nombre.trim();
+      const mensaje = `Hola, me llamo ${nombre} y quiero agendar una cita para mejorar mi descanso con el sistema de cristales y tecnología.`;
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensaje)}`;
+      window.open(url, '_blank');
+    } else if (nombre !== null) {
+      alert("Por favor escribe tu nombre para continuar.");
+    }
+  });
+
+  // Formulario de email (captura simple)
   const form = document.getElementById('captureForm');
   const mensajeDiv = document.getElementById('mensajeConfirmacion');
-
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     const nombre = document.getElementById('nombre').value.trim();
     const email = document.getElementById('email').value.trim();
     if (!nombre || !email) {
-      mensajeDiv.innerText = '❌ Por favor, completa tu nombre y correo.';
+      mensajeDiv.innerText = '❌ Completa nombre y correo.';
       mensajeDiv.style.color = '#f87171';
       return;
     }
-    // Aquí se integraría un endpoint real, pero mostramos mensaje de éxito y redirección simbólica.
-    mensajeDiv.innerHTML = '✅ ¡Acceso concedido! Revisa tu bandeja de entrada (o spam) en los próximos 5 minutos. Te espera el informe confidencial y un cupón sorpresa. 🌙';
+    mensajeDiv.innerHTML = '✅ ¡Listo! Revisa tu bandeja (y spam) en minutos. El informe secreto y descuento están en camino. 🌙';
     mensajeDiv.style.color = '#a78bfa';
     form.reset();
-    // Opcional: podríamos redirigir a un "gracias" o simular envío de lead.
-    // Como experto en tráfico, recomiendo después enviar un email automático.
-    console.log(`Lead capturado: ${nombre} - ${email}`);
+    // Aquí integrarías un endpoint real para guardar leads
+    console.log(`Lead: ${nombre} - ${email}`);
   });
 </script>
 </body>
